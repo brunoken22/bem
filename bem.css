@@ -25,17 +25,22 @@ body{
    padding-right: 5vw;
 }
 
-.ingresar{
-}
 
 .ingresar > .ingresar__boton{
    background-color: #6FE2FB;
-   width: 35vw;
-   height:7vh;
+   width: 120px ;
+   height: 50px;
    font-size: 1.2rem;
    font-weight: 400;
+   border: none;
+   border-radius: 3px;
 }
-
+@media(min-width:376px){
+   .ingresar > .ingresar__boton{
+      width:200px;
+      height: 55px;
+   }
+}
 /* --------------CONTENIDO-------------- */
 .contenido{
    height: 100%;
@@ -58,4 +63,28 @@ body{
    display: flex;
    flex-direction: column;
    align-items: center;
+   min-width: 280px;
+}
+.form > .form__label{
+   font-size: 1.1rem;
+   font-weight:600;
+}
+.form > .form__input{
+   width: 100%;
+   background-color: #E8E8E8;
+   font-size: 1rem;
+   padding: 0.5rem;
+   margin: 5px auto 1rem auto;
+   border: none;
+   
+}
+
+.form > .form__enviar{
+   width: 100%;
+   font-size: 1rem;
+   font-weight: 400;
+   background-color: #6FE2FB;
+   padding: 0.5rem;
+   border: none;
+   border-radius: 3px;
 }
